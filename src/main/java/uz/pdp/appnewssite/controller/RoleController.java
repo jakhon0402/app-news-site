@@ -23,7 +23,7 @@ public class RoleController {
     RoleService roleService;
 
     @PostMapping
-    public HttpEntity<?> registerUser(@Valid @RequestBody RoleDto roleDto){
+    public HttpEntity<?> addRole(@Valid @RequestBody RoleDto roleDto){
         ApiResponse apiResponse = roleService.addRole(roleDto);
         return ResponseEntity.status(apiResponse.isSuccess()?200:409).body(apiResponse);
     }

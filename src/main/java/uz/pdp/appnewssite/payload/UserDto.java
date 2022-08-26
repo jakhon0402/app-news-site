@@ -3,8 +3,11 @@ package uz.pdp.appnewssite.payload;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uz.pdp.appnewssite.entity.enums.Permission;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
